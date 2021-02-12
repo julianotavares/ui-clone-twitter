@@ -1,6 +1,14 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import {
+  Container,
+  Banner,
+  Avatar,
+  ProfileData,
+  LocationIcon,
+  CakeIcon,
+  Followage,
+} from './styles';
 
 const ProfilePage: React.FC = () => {
   return (
