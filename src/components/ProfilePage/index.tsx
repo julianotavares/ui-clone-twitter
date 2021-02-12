@@ -1,5 +1,7 @@
 import React from 'react';
 
+// import Feed from '../Feed';
+
 import {
   Container,
   Banner,
@@ -8,6 +10,7 @@ import {
   LocationIcon,
   CakeIcon,
   Followage,
+  EditButton,
 } from './styles';
 
 const ProfilePage: React.FC = () => {
@@ -15,37 +18,40 @@ const ProfilePage: React.FC = () => {
     <Container>
       <Banner>
         <Avatar />
-        <ProfileData>
-          <EditButton outlined>Editar perfil</EditButton>
-
-          <h1>Juliano Tavares</h1>
-          <h2>@julianotavares@gmail.com</h2>
-
-          <p>
-            Developer at <a href="http://www.orus.dev">@OrusTecnologia</a>
-          </p>
-
-          <ul>
-            <li>
-              <LocationIcon />
-              Mineiros, Brasil
-            </li>
-            <li>
-              <CakeIcon />
-              Nascido(a) em 01 de fevereiro de 1981
-            </li>
-          </ul>
-
-          <Followage>
-            <span>
-              seguindo <strong>94</strong>
-            </span>
-            <span>
-              <strong>2993 </strong> seguidores
-            </span>
-          </Followage>
-        </ProfileData>
       </Banner>
+
+      <ProfileData>
+        <EditButton outlined>Editar perfil</EditButton>
+
+        <h1>Juliano Tavares</h1>
+        <h2>@julianotavaress</h2>
+
+        <p>
+          Developer at <a href="https://orus.dev">@Orusdev</a>
+        </p>
+
+        <ul>
+          <li>
+            <LocationIcon />
+            São Paulo, Brasil
+          </li>
+          <li>
+            <CakeIcon />
+            Nascido(a) em 01 de fevereiro de 1981
+          </li>
+        </ul>
+
+        <Followage>
+          <span>
+            seguindo <strong>94</strong>
+          </span>
+          <span>
+            <strong>672 </strong> seguidores
+          </span>
+        </Followage>
+      </ProfileData>
+
+      {/* <Feed /> */}
     </Container>
   );
 };
